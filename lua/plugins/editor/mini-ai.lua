@@ -24,13 +24,8 @@ return {
       },
     }
   end,
-  -- FIXME: keybind now showing in which-key
-  -- config = function(_, opts)
-  --   require("mini.ai").setup(opts)
-  --   LazyVim.on_load("which-key.nvim", function()
-  --     vim.schedule(function()
-  --       LazyVim.mini.ai_whichkey(opts)
-  --     end)
-  --   end)
-  -- end,
+
+  config = function(_, opts)
+    require("mini.ai").setup(opts)
+  end,
 }

@@ -10,8 +10,7 @@ return {
   config = function(_, opts)
     require("illuminate").configure(opts)
 
-    require("snacks")
-      .toggle({
+    Snacks.toggle({
         name = "Illuminate",
         get = function()
           return not require("illuminate.engine").is_paused()
