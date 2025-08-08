@@ -30,11 +30,11 @@ return {
 
     return {
       sources = {
-        null_ls.builtins.formattng.ruff,
-        null_ls.builtins.diagnostics.pyright.with {
+        null_ls.builtins.formatting.black,
+        null_ls.builtins.diagnostics.mypy.with {
           extra_args = function()
             local virtual = os.getenv "VIRTUAL_ENV" or os.getenv "CONDA_PREFIX" or "/usr"
-            return { "--pythonpath", virtual .. "/bin/python3" }
+            return { "--python-binary", virtual .. "/bin/python3" }
           end,
         },
       },
