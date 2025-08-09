@@ -1,21 +1,29 @@
 return {
-  "stevearc/aerial.nvim",
+  'stevearc/aerial.nvim',
+  opts = function(_, opts)
+    local more_opts = {
+      event = { "VeryLazy" },
+      backends = { "treesitter", "lsp", "markdown" },
+    }
+    vim.list_extend(opts, more_opts)
+  end,
+  -- Optional dependencies
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
     "nvim-tree/nvim-web-devicons",
-    "folke/snacks.nvim",
+    "folke/snacks.nvim"
   },
   -- Keyboard shortcuts
   keys = function(_, keys)
-    local aerial = require "aerial"
+    local aerial = require("aerial")
     vim.list_extend(keys, {
-      {
-        "<leader>of",
+      { 
+        "<leader>of", 
         function()
           aerial.snacks_picker()
         end,
-        desc = "Open Aerial [Floating]",
-      },
+        desc = "Open Aerial [Floating]"
+      }
     })
-  end,
+  end
 }
