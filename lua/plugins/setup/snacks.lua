@@ -25,7 +25,7 @@ local map = Snacks.keymap.set
 -- find
 map("n", "<leader>fs", function() Snacks.picker.smart() end, { desc = "Smart Find Files" })
 map("n", "<leader>ff", function() Snacks.picker.files() end, { desc = "Find Files" })
-map("n", "<leader>fb,", function() Snacks.picker.buffers() end, { desc = "Buffers" })
+map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Buffers" })
 map("n", "<leader>fw", function() Snacks.picker.grep() end, { desc = "Grep" })
 map("n", "<leader>fh", function() Snacks.picker.command_history() end, { desc = "Command History" })
 map("n", "<leader>fl", function() Snacks.picker.notifications() end, { desc = "Notification History | Logs" })

@@ -12,6 +12,9 @@ vim.pack.add({
     -- autocomplete
     { src = "https://github.com/saghen/blink.cmp",               version = vim.version.range("^1") }, --blink.cmp
 
+    -- which-key
+    { src = "https://github.com/folke/which-key.nvim" }, --which-key
+
     -- comments
     { src = "https://github.com/numToStr/Comment.nvim" }, --Comment
 
