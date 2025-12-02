@@ -21,14 +21,19 @@ vim.pack.add({
     -- noice and deps
     { src = "https://github.com/folke/noice.nvim" },     --noice
     { src = "https://github.com/MunifTanjim/nui.nvim" }, --nui
-    { src = "https://github.com/rcarriga/nvim-notify" }  --notify
+    { src = "https://github.com/rcarriga/nvim-notify" },  --notify
+
+    -- bufferline
+    { src = "https://github.com/akinsho/bufferline.nvim" }, --bufferline
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" } --wev-dev-icons
 })
 
 
 require("Comment").setup()
+require("nvim-web-devicons").setup()
+require("bufferline").setup()
 
-
-require("lua.plugins.setup.blink")
-require("lua.plugins.setup.mason")
-require("lua.plugins.setup.noice")
-require("lua.plugins.setup.snacks")
+require("plugins.setup.blink")
+require("plugins.setup.mason")
+require("plugins.setup.noice")
+require("plugins.setup.snacks")

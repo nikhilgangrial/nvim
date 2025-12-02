@@ -10,4 +10,4 @@ vim.lsp.enable({
 vim.diagnostic.config({ signs = true })
 
 
-require "lua.lsp.overides.lua_ls"
+require "lsp.overides.lua_ls"
