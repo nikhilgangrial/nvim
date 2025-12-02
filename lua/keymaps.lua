@@ -27,5 +27,7 @@ map("n", "<C-k>", "<C-w>k", { desc = "Move down" })
 -- LSP keymaps
 local lsp = vim.lsp
 
-map("n", "<leader>lf", function() lsp.buf.format() end, { desc = "LSP format file" })
-map("n", "<leader>lr", function() lsp.buf.rename() end, { desc = "LSP rename" })
+map("n", "<leader>lf", lsp.buf.format, { desc = "LSP format file" })
+map("n", "<leader>lr", lsp.buf.rename, { desc = "LSP rename" })
+map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
