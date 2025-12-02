@@ -12,6 +12,16 @@ map("n", "<leader>t", "<cmd>tabnew<CR>", { desc = "Open new tab" })
 -- Buffer management
 map("n", "<Tab>", "<cmd>bnext<CR>", { desc = "Next buffer" })
 map("n", "<S-Tab>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
+map("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
+
+-- Panes
+map("n", "<leader>v", "<cmd>vsplit<CR>", { desc = "Split vertically" })
+map("n", "<leader>h", "<cmd>split<CR>", { desc = "Split horizontally" })
+
+map("n", "<C-h>", "<C-w>h", { desc = "Move left" })
+map("n", "<C-l>", "<C-w>l", { desc = "Move right" })
+map("n", "<C-j>", "<C-w>j", { desc = "Move up" })
+map("n", "<C-k>", "<C-w>k", { desc = "Move down" })
 
 
 -- LSP keymaps
