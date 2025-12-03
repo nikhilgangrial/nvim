@@ -1,9 +1,3 @@
-require("mason").setup {
-    ensure_installed = {
-        "lua_ls",
-        "ts_ls",
-        "rust_analyzer",
-        "pyright",
-        "ruff",
-    }
-}
+local tools = require "lsp.servers"
+
+require("mason").setup { ensure_installed = tools }

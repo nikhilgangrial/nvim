@@ -1,7 +1,6 @@
 -- COPIED FROM NVCHAD
 
-require('vim._extui').enable({})
-
+require("vim._extui").enable {}
 
 local opt = vim.opt
 local o = vim.o

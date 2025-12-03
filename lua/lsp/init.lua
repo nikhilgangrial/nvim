@@ -1,13 +1,5 @@
-vim.lsp.enable({
-    "lua_ls",
-    "ts_ls",
-    "rust-analyzer",
-    "pyright",
-    "ruff",
-})
+vim.lsp.enable(require "lsp.servers")
 
-
-vim.diagnostic.config({ signs = true })
-
+vim.diagnostic.config { signs = true }
 
 require "lsp.overides.lua_ls"
