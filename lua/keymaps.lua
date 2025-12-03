@@ -23,11 +23,11 @@ map("n", "<C-l>", "<C-w>l", { desc = "Move right" })
 map("n", "<C-j>", "<C-w>j", { desc = "Move up" })
 map("n", "<C-k>", "<C-w>k", { desc = "Move down" })
 
-
 -- LSP keymaps
-local lsp = vim.lsp
-
-map("n", "<leader>lf", lsp.buf.format, { desc = "LSP format file" })
-map("n", "<leader>lr", lsp.buf.rename, { desc = "LSP rename" })
+map("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP format file" })
+map("n", "<leader>lr", vim.lsp.buf.rename, { desc = "LSP rename" })
+map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP code action" })
+map("v", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP code action" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
