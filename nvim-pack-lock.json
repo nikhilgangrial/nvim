@@ -4,6 +4,10 @@
       "rev": "e30b7f2008e52442154b66f7c519bfd2f1e32acb",
       "src": "https://github.com/numToStr/Comment.nvim"
     },
+    "aerial.nvim": {
+      "rev": "8bb8697d180681746da41bef5c8691d04443af36",
+      "src": "https://github.com/stevearc/aerial.nvim"
+    },
     "blink.cmp": {
       "rev": "b19413d214068f316c78978b08264ed1c41830ec",
       "src": "https://github.com/saghen/blink.cmp",
@@ -12,6 +16,10 @@
     "bufferline.nvim": {
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim"
+    },
+    "kanagawa.nvim": {
+      "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
+      "src": "https://github.com/rebelot/kanagawa.nvim"
     },
     "lualine.nvim": {
       "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
@@ -56,6 +64,10 @@
     "tiny-inline-diagnostic.nvim": {
       "rev": "38b06435305c30966b7ceb0a43e460dc43acaada",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
+    },
+    "tokyonight.nvim": {
+      "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
+      "src": "https://github.com/folke/tokyonight.nvim"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

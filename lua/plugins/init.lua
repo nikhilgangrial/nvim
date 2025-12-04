@@ -33,6 +33,13 @@ vim.pack.add {
 
   -- wanings and problems
   { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
+
+  -- themes
+  { src = "https://github.com/rebelot/kanagawa.nvim" }, -- kanagawa
+  { src = "https://github.com/folke/tokyonight.nvim" }, -- tokyonight
+
+  -- aerial
+  { src = "https://github.com/stevearc/aerial.nvim" }, -- aerail
 }
 
 require("Comment").setup()
@@ -41,8 +48,11 @@ require("bufferline").setup()
 require("scope").setup()
 require("lualine").setup {}
 require("tiny-inline-diagnostic").setup()
+require("kanagawa").setup()
+require("tokyonight").setup()
 
 require "plugins.setup.blink"
 require "plugins.setup.mason"
 require "plugins.setup.noice"
 require "plugins.setup.snacks"
+require "plugins.setup.aerial"

@@ -13,6 +13,7 @@ o.splitkeep = "screen"
 
 o.clipboard = "unnamedplus"
 o.cursorline = true
+o.relativenumber = true
 o.cursorlineopt = "number"
 
 -- Indenting
@@ -21,6 +22,7 @@ o.shiftwidth = 2
 o.smartindent = true
 o.tabstop = 2
 o.softtabstop = 2
+o.listchars = "tab:\\▏→,space:·"
 
 opt.fillchars = { eob = " " }
 o.ignorecase = true
@@ -59,3 +61,4 @@ local is_windows = vim.fn.has "win32" ~= 0
 local sep = is_windows and "\\" or "/"
 local delim = is_windows and ";" or ":"
 vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. delim .. vim.env.PATH
+vim.cmd "colorscheme tokyonight"
