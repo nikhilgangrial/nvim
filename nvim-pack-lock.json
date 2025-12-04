@@ -17,6 +17,10 @@
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
+    "indent-blankline.nvim": {
+      "rev": "005b56001b2cb30bfa61b7986bc50657816ba4ba",
+      "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
+    },
     "kanagawa.nvim": {
       "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
       "src": "https://github.com/rebelot/kanagawa.nvim"
@@ -28,6 +32,22 @@
     "mason.nvim": {
       "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
       "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini.ai": {
+      "rev": "bfb26d9072670c3aaefab0f53024b2f3729c8083",
+      "src": "https://github.com/nvim-mini/mini.ai"
+    },
+    "mini.move": {
+      "rev": "4d214202d71e0a4066b6288176bbe88f268f9777",
+      "src": "https://github.com/nvim-mini/mini.move"
+    },
+    "mini.pairs": {
+      "rev": "472ec50092a3314ec285d2db2baa48602d71fe93",
+      "src": "https://github.com/nvim-mini/mini.pairs"
+    },
+    "mini.surround": {
+      "rev": "88c52297ed3e69ecf9f8652837888ecc727a28ee",
+      "src": "https://github.com/nvim-mini/mini.surround"
     },
     "noice.nvim": {
       "rev": "7bfd942445fb63089b59f97ca487d605e715f155",

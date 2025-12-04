@@ -31,6 +31,9 @@ vim.pack.add {
   -- lualine
   { src = "https://github.com/nvim-lualine/lualine.nvim" }, --lualine
 
+  -- blankline
+  { src = "https://github.com/lukas-reineke/indent-blankline.nvim" }, --ibl
+
   -- wanings and problems
   { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
@@ -39,17 +42,33 @@ vim.pack.add {
   { src = "https://github.com/folke/tokyonight.nvim" }, -- tokyonight
 
   -- aerial
-  { src = "https://github.com/stevearc/aerial.nvim" }, -- aerail
+  { src = "https://github.com/stevearc/aerial.nvim" }, -- aerial
+
+  -- mini.nvim
+  { src = "https://github.com/nvim-mini/mini.surround" },
+  { src = "https://github.com/nvim-mini/mini.ai" },
+  { src = "https://github.com/nvim-mini/mini.pairs" },
+  { src = "https://github.com/nvim-mini/mini.move" },
 }
 
 require("Comment").setup()
+require("ibl").setup{}
+require("tiny-inline-diagnostic").setup()
+
+require("scope").setup()
 require("nvim-web-devicons").setup()
 require("bufferline").setup()
-require("scope").setup()
 require("lualine").setup {}
-require("tiny-inline-diagnostic").setup()
+
+-- themes
 require("kanagawa").setup()
 require("tokyonight").setup()
+
+-- mini
+require("mini.ai").setup {}
+require("mini.surround").setup {}
+require("mini.pairs").setup {}
+require("mini.move").setup {}
 
 require "plugins.setup.blink"
 require "plugins.setup.mason"
