@@ -3,6 +3,7 @@ local map = Snacks.keymap.set
 -- Editor basic
 map("n", "<leader>/", "gcc", { desc = "Toggle comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "Toggle comment", remap = true })
+map("n", "<C-s>", ":w<CR>", { desc = "Save" })
 
 -- TAB management
 map("n", "<leader><Tab>", "<cmd>tabnext<CR>", { desc = "Next Tab(Cyclic)" })
