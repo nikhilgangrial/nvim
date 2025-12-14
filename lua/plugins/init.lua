@@ -49,10 +49,15 @@ vim.pack.add {
   { src = "https://github.com/nvim-mini/mini.ai" },
   { src = "https://github.com/nvim-mini/mini.pairs" },
   { src = "https://github.com/nvim-mini/mini.move" },
+
+  -- rust
+  { src = "https://github.com/mrcjkb/rustaceanvim", version = vim.version.range "^7" },
+  { src = "https://github.com/rust-lang/rust.vim" },
+  { src = "https://github.com/Saecki/crates.nvim" },
 }
 
 require("Comment").setup()
-require("ibl").setup{}
+require("ibl").setup {}
 require("tiny-inline-diagnostic").setup()
 
 require("scope").setup()
@@ -69,6 +74,9 @@ require("mini.ai").setup {}
 require("mini.surround").setup {}
 require("mini.pairs").setup {}
 require("mini.move").setup {}
+
+-- rust
+require("crates").setup {}
 
 require "plugins.setup.blink"
 require "plugins.setup.mason"
