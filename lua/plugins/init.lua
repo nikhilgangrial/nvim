@@ -15,9 +15,6 @@ vim.pack.add {
   -- which-key
   { src = "https://github.com/folke/which-key.nvim" }, --which-key
 
-  -- comments
-  { src = "https://github.com/numToStr/Comment.nvim" }, --Comment
-
   -- noice and deps
   { src = "https://github.com/folke/noice.nvim" }, --noice
   { src = "https://github.com/MunifTanjim/nui.nvim" }, --nui
@@ -56,7 +53,6 @@ vim.pack.add {
   { src = "https://github.com/Saecki/crates.nvim" },
 }
 
-require("Comment").setup()
 require("ibl").setup {}
 require("tiny-inline-diagnostic").setup()
 
