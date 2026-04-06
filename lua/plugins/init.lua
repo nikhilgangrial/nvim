@@ -51,7 +51,7 @@ vim.pack.add {
   { src = "https://github.com/nvim-mini/mini.move" },
 
   -- rust
-  { src = "https://github.com/mrcjkb/rustaceanvim", version = vim.version.range "^7" },
+  { src = "https://github.com/mrcjkb/rustaceanvim" },
   { src = "https://github.com/rust-lang/rust.vim" },
   { src = "https://github.com/Saecki/crates.nvim" },
 }
